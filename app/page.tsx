@@ -1,20 +1,29 @@
+"use client";
+
 import Image from "next/image";
 import { ButtonS } from "@/components/button";
 
 export default function Home() {
   return (
     <>
-      <div className=" flex flex-col flex-center  gap-3 ml-20 p-3 min-h-screen bg-base-200 overflow-hidden">
-        <div className="flex flex-center gap-4 bg-base-200">
-          <div className="flex flex-col gap-6 h-[37.5rem] w-[62.5rem] bg-white rounded-lg ">
-            <h1 className="text-7xl font-black pt-10 pl-20">Alexandre Laborde</h1>
-            <p className="pt-0 px-20 font-light">
+      {/* Hero */}
+      <div className=" flex flex-col flex-center gap-3 lg:ml-20 p-4 lg:min-h-screen overflow-hidden">
+        {/* Bloc - info/cta */}
+        <div className="flex flex-col md:flex-row flex-center gap-4">
+          {/* Bloc - Title */}
+          <div className="w-full flex flex-col p-3 lg:gap-6 lg:h-[37.5rem] lg:w-[62.5rem] rounded-lg border-4 border-black ">
+            <h1 className="text-5xl lg:text-7xl text-[--color-dark] font-black lg:pt-10 lg:pl-20">
+              Alexandre Laborde
+            </h1>
+            <p className="text-md pt-0 lg:px-20 font-light text-[--color-dark]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aspernatur labore
               harum explicabo sed, ratione, debitis voluptates nihil possimus aut molestias ducimus
               blanditiis magni voluptatibus reprehenderit laboriosam fugit obcaecati quas?
             </p>
+            <ButtonS>Contactez-moi</ButtonS>
           </div>
-          <div className="flex h-[37.5rem] w-[25rem] bg-white rounded-lg"></div>
+          {/* Bloc - slider */}
+          <div className="flex h-60 md:h-[37.5rem] md:w-[25rem] bg-white rounded-lg"></div>
         </div>
         <div className="flex gap-4 p-3 bg-white rounded-lg">
           <ButtonS link="/about" target="_blank">

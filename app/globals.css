@@ -8,11 +8,14 @@
 }
 
 :root {
-  --bg-color: #f1f1f1;
+  --color-light: #f1f1f1;
+  --color-dark: #1f1f1f;
+  --color-test: #45fe83;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: Epilogue;
+  background-color: var(--color-light);
 }
