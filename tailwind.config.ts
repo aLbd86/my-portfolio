@@ -10,14 +10,28 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: [
+      {
+        mytheme: {
+          primary: "#F1861D",
+          secondary: "#36B39C",
+          accent: "#36B39C",
+          neutral: "#1f1f1f",
+          // Guillemet pour une variable qui a un tiret base != base-100
+          "base-100": "#f1f1f1",
+          info: "#00b5ff",
+          success: "#36B39C",
+          warning: "#ffab00",
+          error: "#ff0047",
+        },
+      },
+    ],
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components

@@ -10,12 +10,23 @@
 :root {
   --color-light: #f1f1f1;
   --color-dark: #1f1f1f;
-  --color-test: #45fe83;
+  --color-primary: #F1861D;
+  --color-secondary: #36B39C;
+  --swiper-theme-color: red;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: Epilogue;
-  background-color: var(--color-light);
 }
+
+.swiper-pagination-bullet{
+  background-color: var(--color-secondary) !important;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--color-primary) !important;
+}
+
+
