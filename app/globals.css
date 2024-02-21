@@ -29,4 +29,8 @@
   background-color: var(--color-primary) !important;
 }
 
+.swiper-pagination-horizontal {
+  bottom: 25px;
+}
+
 

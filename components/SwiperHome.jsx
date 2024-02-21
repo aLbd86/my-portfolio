@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,8 +15,9 @@ export default function SwiperHome() {
   return (
     <>
       <Swiper
+        className="flex w-full"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={1}
         navigation={false}
         pagination={{ clickable: true }}
@@ -24,10 +25,34 @@ export default function SwiperHome() {
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide className="text-2xl">Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        {/* ... */}
+        <SwiperSlide className="flex">
+          <Image
+            className="flex w-full rounded-lg"
+            width={400}
+            height={600}
+            object-fit="fill"
+            src="/images/swiper-home-slide-1.webp"
+            alt="dj ia"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="flex w-full rounded-lg"
+            width={400}
+            height={600}
+            src="/images/swiper-home-slide-2.webp"
+            alt="tunnel"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            className="flex w-full rounded-lg"
+            width={400}
+            height={600}
+            src="/images/swiper-home-slide-3.webp"
+            alt="easy"
+          />
+        </SwiperSlide>
       </Swiper>
     </>
   );
