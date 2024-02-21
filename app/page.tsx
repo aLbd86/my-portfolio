@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <div className=" flex flex-col flex-center gap-3 lg:ml-20 p-4 overflow-hidden">
-        {/* Bloc - info/cta */}
+      <div className=" flex flex-col flex-center gap-3 lg:ml-20 p-4 min-h-screen overflow-hidden">
+        {/* Bloc - info */}
         <div className=" flex flex-col lg:flex-row gap-4">
           {/* Bloc - Title */}
-          <div className=" w-0 basis-1/2 lg:basis-2/3 flex items-end justify-center flex-col px-6 py-2 md:px-10 lg:px-10 gap-4 rounded-lg border-4 border-neutral ">
-            {/* Bloc - texte */}
+          <div className=" w-0 basis-1/2 lg:basis-3/4 flex items-end justify-center flex-col // px-3 gap-4 rounded-lg border-4 border-neutral ">
+            {/* Title - texte */}
             <div className="flex flex-col justify-center lg:py-4 gap-8">
               <div className="w-max">
                 <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D pr-8 text-7xl text-neutral font-black">
@@ -28,13 +28,13 @@ export default function Home() {
                 . <br />
               </p>
             </div>
-            {/* bloc button */}
+            {/* Title - button */}
             <div className="flex">
               <ButtonS>Entrez dans mon univers</ButtonS>
             </div>
           </div>
           {/* Bloc - slider */}
-          <div className="basis-1/2 lg:basis-1/3 flex justify-center items-center w-0  bg-white rounded-lg">
+          <div className="w-0 basis-1/2 lg:basis-1/4 flex justify-center items-center  bg-white rounded-lg">
             <SwiperHome></SwiperHome>
           </div>
         </div>

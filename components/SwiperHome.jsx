@@ -1,5 +1,9 @@
 "use client";
 import Image from "next/image";
+import Slide1 from "../public/images/swiper-home-slide-1.webp";
+import Slide2 from "../public/images/swiper-home-slide-2.webp";
+import Slide3 from "../public/images/slide4.jpeg";
+
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,7 +19,7 @@ export default function SwiperHome() {
   return (
     <>
       <Swiper
-        className="flex w-full"
+        className=""
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
         slidesPerView={1}
@@ -25,33 +29,14 @@ export default function SwiperHome() {
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide className="flex">
-          <Image
-            className="flex w-full rounded-lg"
-            width={400}
-            height={600}
-            object-fit="fill"
-            src="/images/swiper-home-slide-1.webp"
-            alt="dj ia"
-          />
+        <SwiperSlide className="">
+          <Image className="rounded-lg"  src={Slide3} alt="dj ia" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className="flex w-full rounded-lg"
-            width={400}
-            height={600}
-            src="/images/swiper-home-slide-2.webp"
-            alt="tunnel"
-          />
+          <Image className="rounded-lg"  src={Slide3} alt="tunnel" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            className="flex w-full rounded-lg"
-            width={400}
-            height={600}
-            src="/images/swiper-home-slide-3.webp"
-            alt="easy"
-          />
+          <Image className="rounded-lg"  src={Slide3} alt="easy" />
         </SwiperSlide>
       </Swiper>
     </>
