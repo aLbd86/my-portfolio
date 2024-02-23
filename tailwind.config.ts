@@ -2,6 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
+    "./lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-gradient":
+          "linear-gradient(90deg, #F1F1F1 0%, rgba(234, 234, 234, 0) 11.5%, rgba(217, 217, 217, 0) 50%, rgba(232, 232, 232, 0) 88.5%, #F1F1F1 100%)",
       },
       keyframes: {
         typing: {
@@ -30,9 +31,19 @@ const config: Config = {
             borderColor: "#F1861D",
           },
         },
+        slideToLeft: {
+          "0%": { transform: "translateX(210%)" },
+          "100%": { transform: "translateX(-30%)" },
+        },
+        slideToRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(50%)" },
+        },
       },
       animation: {
         typing: "typing 2.5s steps(40) infinite alternate, blink .5s infinite",
+        slideToLeft: "slideToLeft 10s linear infinite",
+        slideToRight: "slideToRight 12s linear infinite",
       },
     },
   },

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navigation = () => {
   return (
     <div className="hidden md:flex md:flex-col md:items-center md:justify-around md:fixed top-0 left-0 h-screen bg-neutral w-20 gap-10">
@@ -9,9 +7,14 @@ const Navigation = () => {
           className=" flex flex-row-reverse gap-12 items-center bg-neutral justify-center rotate-180"
           style={{ writingMode: "vertical-rl" }}>
           <li className="text-lg text-base-100">
-            <a href="">Accueil</a></li>
-          <li className="text-lg text-base-100"><a href="">Projets</a></li>
-          <li className="text-lg text-base-100"><a href="">À propos</a></li>
+            <a href="/">Accueil</a>
+          </li>
+          <li className="text-lg text-base-100">
+            <a href="/projets/harmonacc">Projets</a>
+          </li>
+          <li className="text-lg text-base-100">
+            <a href="">À propos</a>
+          </li>
         </ul>
       </div>
 

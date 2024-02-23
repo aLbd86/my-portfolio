@@ -1,7 +1,5 @@
 "use client";
 import Image from "next/image";
-import Slide1 from "../public/images/swiper-home-slide-1.webp";
-import Slide2 from "../public/images/swiper-home-slide-2.webp";
 import Slide3 from "../public/images/slide4.jpeg";
 
 // import function to register Swiper custom elements
