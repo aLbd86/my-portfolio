@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "lib/Button.tsx",
-    "components/SwiperHome.jsx"
+    "components/SwiperHome.jsx",
+    "components/ForC.tsx"
   ],
   "exclude": ["node_modules"]
 }
