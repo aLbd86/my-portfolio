@@ -23,22 +23,22 @@ export const Title = () => {
     <>
       <div className="w-max">
         <h1
-        // style={{ animationPlayState: "paused" }}
+          // style={{ animationPlayState: "paused" }}
           ref={firstTitleRef}
           onAnimationEnd={handleAnimationEnd}
-          className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D pr-8 md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
+          className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D pr-8 // sm:text-2xl md:text-5xl lg:text-7xl xl:text-6xl 2xl:text-8xl text-neutral font-black ${
             showFirstTitle ? "block" : "hidden"
           }`}>
           Alexandre Laborde
         </h1>
         <h1
-        // style={{ animationPlayState: "paused" }}
+          // style={{ animationPlayState: "paused" }}
           ref={secondTitleRef}
           onAnimationEnd={handleAnimationEnd}
-          className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D pr-8 md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
+          className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D pr-10 // sm:text-2xl md:text-5xl lg:text-7xl xl:text-6xl 2xl:text-8xl text-neutral font-black ${
             !showFirstTitle ? "block" : "hidden"
           }`}>
-          Mon portfolio
+          Artiste multi-disciplinaire
         </h1>
       </div>
     </>
