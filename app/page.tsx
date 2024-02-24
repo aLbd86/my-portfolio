@@ -16,11 +16,11 @@ export default function Home() {
             <div className="flex flex-col justify-center lg:py-4 gap-8 xl:text-end">
               <Title />
               <p className="text-lg xl:text-2xl font-light text-neutral pr-8 xl:pr-0">
-                Bienvenue dans mon espace de croissance et{" "}
+                Bienvenue dans mon espace de croissance et
                 <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-bold text-xl xl:text-4xl">
                   d’innovation
                 </span>
-                . <br />
+                .
               </p>
             </div>
             {/* Title - button */}
