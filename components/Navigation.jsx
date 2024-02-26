@@ -12,7 +12,7 @@ const Navigation = () => {
                 <a href="/">Accueil</a>
               </li>
               <li className="text-lg text-base-100">
-                <a href="/devweb/projects/harmonacc">Dev. Web</a>
+                <a href="/devweb/projets/harmonacc">Dev. Web</a>
               </li>
               <li className="text-lg text-base-100">
                 <a href="/music">Musique</a>
