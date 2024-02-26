@@ -1,9 +1,3 @@
-export const page = () => {
-    return (
-        <>
-        
-        </>
-    )
-    }
-    
-    export default page;
+export default function page() {
+  return <></>;
+}

@@ -2,7 +2,7 @@
 
 import Player from "@/components/Player";
 
-export const page = () => {
+export default function page() {
   return (
     <>
       {/* Main  */}
@@ -24,6 +24,4 @@ export const page = () => {
       </main>
     </>
   );
-};
-
-export default page;
+}
