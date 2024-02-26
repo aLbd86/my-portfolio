@@ -1,6 +1,5 @@
 import { ButtonS } from "@/lib/Button";
 import { Title } from "@/lib/Title";
-import Slogan from "../components/Slogan";
 import SwiperHome from "../components/SwiperHome";
 
 export default function Home() {
@@ -34,7 +33,7 @@ export default function Home() {
           </div>
         </div>
         <div className=" flex border-4 border-neutral rounded-lg bg-origin-border">
-          <Slogan />
+
         </div>
       </div>
     </>

@@ -12,7 +12,10 @@ const Navigation = () => {
                 <a href="/">Accueil</a>
               </li>
               <li className="text-lg text-base-100">
-                <a href="/projets/harmonacc">Projets</a>
+                <a href="/projets/harmonacc">Dev. Web</a>
+              </li>
+              <li className="text-lg text-base-100">
+                <a href="/music">Musique</a>
               </li>
               <li className="text-lg text-base-100">
                 <a href="">À propos</a>
@@ -52,7 +55,9 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className="fixed bottom-5 w-full flex justify-center">
+
+        {/* Menu mobile */}
+        <div className="fixed bottom-5 w-full flex justify-center z-50">
           <ul className="md:hidden flex bottom-5 menu menu-horizontal bg-base-200 rounded-box mt-6">
             <li>
               {/* Home */}
@@ -68,7 +73,7 @@ const Navigation = () => {
             </li>
             <li>
               {/* Music */}
-              <a className="tooltip">
+              <a href="/music" className="tooltip">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
