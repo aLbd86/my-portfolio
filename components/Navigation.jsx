@@ -12,7 +12,7 @@ const Navigation = () => {
                 <a href="/">Accueil</a>
               </li>
               <li className="text-lg text-base-100">
-                <a href="/projets/harmonacc">Dev. Web</a>
+                <a href="/devweb/projects/harmonacc">Dev. Web</a>
               </li>
               <li className="text-lg text-base-100">
                 <a href="/music">Musique</a>
@@ -84,7 +84,7 @@ const Navigation = () => {
               </a>
             </li>
             <li>
-              <a href="/projets/harmonacc" className="tooltip">
+              <a href="/harmonacc" className="tooltip">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="20"
