@@ -28,12 +28,18 @@ export default function Home() {
             </div>
           </div>
           {/* Bloc - slider */}
-          <div className="w-[50%] md:w-0 md:basis-1/3 lg:basis-1/4 2xl:basis-1/5 flex justify-center items-center  bg-white rounded-lg // ">
+          <div className="w-[50%] md:w-0 md:basis-1/3 lg:basis-1/4 2xl:basis-1/5 flex justify-center items-center rounded-lg // ">
             <SwiperHome></SwiperHome>
           </div>
         </div>
-        <div className=" flex border-4 border-neutral rounded-lg bg-origin-border">
-
+        <div className=" flex border-4 border-neutral rounded-lg ">
+          <p className=" flex animate-typingP  overflow-hidden max-w-full">
+            Bienvenue dans l&apos;univers où la mélodie de l&apos;accordéon se tisse avec les fils
+            du web. Ici, chaque note jouée est une couleur ajoutée à ma toile numérique. Découvrez
+            un portfolio où la musique et le développement s&apos;harmonisent pour créer une
+            symphonie d&apos;œuvres artistiques et techniques. Laissez-vous guider par l&apos;accord
+            parfait entre passion et professionnalisme.
+          </p>
         </div>
       </div>
     </>

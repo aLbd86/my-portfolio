@@ -23,7 +23,7 @@ export const Title = () => {
     <>
       <div className="w-max">
         <h1
-        // style={{ animationPlayState: "paused" }}
+        style={{ animationPlayState: "paused" }}
           ref={firstTitleRef}
           onAnimationEnd={handleAnimationEnd}
           className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D  // text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
@@ -32,7 +32,7 @@ export const Title = () => {
           Alexandre Laborde
         </h1>
         <h1
-        // style={{ animationPlayState: "paused" }}
+        style={{ animationPlayState: "paused" }}
           ref={secondTitleRef}
           onAnimationEnd={handleAnimationEnd}
           className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D   // text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
