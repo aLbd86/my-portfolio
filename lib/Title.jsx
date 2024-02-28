@@ -25,7 +25,7 @@ export const Title = () => {
         <h1
           // style={{ animationPlayState: "paused" }}
           ref={firstTitleRef}
-          onAnimationEnd={handleAnimationEnd}
+          // onAnimationEnd={handleAnimationEnd}
           className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D // pr-4 xl:pr-10  // text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
             showFirstTitle ? "block" : "hidden"
           }`}>
@@ -34,7 +34,7 @@ export const Title = () => {
         <h1
           // style={{ animationPlayState: "paused" }}
           ref={secondTitleRef}
-          onAnimationEnd={handleAnimationEnd}
+          // onAnimationEnd={handleAnimationEnd}
           className={`animate-typing block overflow-hidden whitespace-nowrap border-r-4 border-r-#F1861D // pr-4 xl:pr-10  // text-3xl md:text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl text-neutral font-black ${
             !showFirstTitle ? "block" : "hidden"
           }`}>

@@ -12,19 +12,19 @@ export const HomePara = () => {
                 <code>espace@musique</code>
               </pre>
             </a>
-            <pre data-prefix="">
+            <pre data-prefix="" className="animate-typingP overflow-hidden whitespace-nowrap">
               <code>Ici, une phrase pas trop longue va devroir être créée.</code>
             </pre>
           </div>
           {/* esoace - dev web */}
-          <div className="flex ">
+          <div className="flex  ">
             <a href="/devweb" className="hover:text-primary">
               <pre data-prefix="$">
                 <code>espace@developpement</code>
               </pre>
             </a>
-            <pre data-prefix="">
-              <code>Ici, une phrase pas trop longue va devroir être créée.</code>
+            <pre data-prefix="" className="animate-typingP overflow-hidden whitespace-nowrap">
+              <code className="" >Ici, une phrase pas trop longue va devroir être créée.</code>
             </pre>
           </div>
           {/* espace - qui suis-je */}
@@ -34,7 +34,7 @@ export const HomePara = () => {
                 <code>espace@qui-suis-je</code>
               </pre>
             </a>
-            <pre data-prefix="">
+            <pre data-prefix="" className="animate-typingP overflow-hidden whitespace-nowrap">
               <code>Ici, une phrase pas trop longue va devroir être créée.</code>
             </pre>
           </div>

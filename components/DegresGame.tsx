@@ -11,7 +11,7 @@ const DegresGame = () => {
   const DEGRES_C = 2;
   const DEGRES_D = 3;
 
-  const [selectedDegresGroup, setSelectedDegresGroup] = useState<number | null>(null);
+const [selectedDegresGroup, setSelectedDegresGroup] = useState<number | null>(null);
 
   // La fonction handleDegresClick accepte un nombre comme argument
   const handleDegresClick = (degre: number) => {
