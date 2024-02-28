@@ -7,11 +7,16 @@
   src: url(../fonts/Epilogue-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: SometypeMono;
+  src: url(../fonts/SometypeMono-VariableFont_wght.ttf);
+}
+
 :root {
   --color-light: #f1f1f1;
   --color-dark: #1f1f1f;
-  --color-primary: #F1861D;
-  --color-secondary: #36B39C;
+  --color-primary: #f1861d;
+  --color-secondary: #36b39c;
   --swiper-theme-color: red;
 }
 
@@ -21,11 +26,11 @@
   font-family: Epilogue;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: var(--color-secondary) !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--color-primary) !important;
 }
 
@@ -33,4 +38,6 @@
   bottom: 25px;
 }
 
-
+.home-para {
+  font-family: SometypeMono;
+}
