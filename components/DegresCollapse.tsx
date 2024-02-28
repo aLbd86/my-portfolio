@@ -3,14 +3,15 @@ interface Props {
   deg4: string;
   deg5: string;
   deg6: string;
-  onclick?: null;
+  onClick?: any;
 }
 
-export default function DegresCollapse({ deg1, deg4, deg5, deg6, onclick }: Props) {
+export default function DegresCollapse({ deg1, deg4, deg5, deg6, onClick }: Props) {
   return (
     <>
       {/* Accordion G*/}
-      <div className="collapse collapse-arrow p-3 bg-base-100 border-2 border-neutral">
+      <div className="collapse collapse-arrow p-3 bg-base-100 border-2 border-neutral"
+      onClick={onClick}>
         <input type="radio" name="accordion-1" />
         <div className="collapse-title collapse-arrow text-xl font-medium">
           Si <span className=" font-bold text-[#3083DC] text-2xl ">{deg1}</span> est le 1er degré
