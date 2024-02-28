@@ -15,8 +15,13 @@ const config: Config = {
       },
       keyframes: {
         typingP: {
-          'from': { maxWidth: '0' },
-          'to': { maxWidth: '100%' },
+          "0%": {
+            width: "0%",
+            visibility: "hidden",
+          },
+          "100%": {
+            width: "100%",
+          },
         },
         typing: {
           "0%": {
@@ -46,7 +51,7 @@ const config: Config = {
       },
       animation: {
         typing: "typing 2.6s steps(22) infinite alternate, blink .5s infinite",
-        typingP: "typing 4s steps(40) 1s forwards, blink .5s infinite",
+        typingP: "typing 4s steps(40) , blink .5s infinite",
         slideToLeft: "slideToLeft 10s linear infinite",
         slideToRight: "slideToRight 12s linear infinite",
       },

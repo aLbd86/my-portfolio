@@ -6,31 +6,46 @@ interface Props {
   onClick?: any;
 }
 
-export default function DegresCollapse({ deg1, deg4, deg5, deg6, onClick }: Props) {
+export default function DegresCollapse({
+  deg1,
+  deg4,
+  deg5,
+  deg6,
+  onClick,
+}: Props) {
   return (
     <>
       {/* Accordion G*/}
-      <div className="collapse collapse-arrow p-3 bg-base-100 border-2 border-neutral"
-      onClick={onClick}>
+      <div
+        className="collapse-arrow bg-base-100 border-neutral collapse border-2 p-3"
+        onClick={onClick}
+      >
         <input type="radio" name="accordion-1" />
         <div className="collapse-title collapse-arrow text-xl font-medium">
-          Si <span className=" font-bold text-[#3083DC] text-2xl ">{deg1}</span> est le 1er degré
+          Si <span className=" text-2xl font-bold text-[#3083DC] ">{deg1}</span>{" "}
+          est le 1er degré
         </div>
         <div className="collapse-content text-neutral">
           <div className="flex flex-col  gap-2">
             <div className="flex items-center">
               <p className="flex items-center text-lg">
                 Le 3ème degré sera{" "}
-                <span className=" font-bold pl-4 text-4xl text-[#36B39C] ">{deg4}</span>
+                <span className=" pl-4 text-4xl font-bold text-[#36B39C] ">
+                  {deg4}
+                </span>
               </p>
             </div>
             <p className="flex items-center text-lg">
               Le 5ème degré sera{" "}
-              <span className=" font-bold pl-4 text-4xl text-[#FFA400]">{deg5}</span>
+              <span className=" pl-4 text-4xl font-bold text-[#FFA400]">
+                {deg5}
+              </span>
             </p>
             <p className="flex items-center text-lg">
               Le 6ème degré sera{" "}
-              <span className=" font-bold pl-4 text-4xl text-[#FF331F]">{deg6}</span>
+              <span className=" pl-4 text-4xl font-bold text-[#FF331F]">
+                {deg6}
+              </span>
             </p>
           </div>
         </div>

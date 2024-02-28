@@ -11,7 +11,9 @@ const DegresGame = () => {
   const DEGRES_C = 2;
   const DEGRES_D = 3;
 
-  const [selectedDegresGroup, setSelectedDegresGroup] = useState<number | null>(null);
+  const [selectedDegresGroup, setSelectedDegresGroup] = useState<number | null>(
+    null,
+  );
 
   // La fonction handleDegresClick accepte un nombre comme argument
   const handleDegresClick = (degre: number) => {
@@ -35,10 +37,14 @@ const DegresGame = () => {
 
   return (
     <>
-      <main className="p-3 ml-20 flex flex-col gap-2 rounded-lg justify-center">
-        <div className="flex justify-start items-center h-screen">
-          <div className="w-full flex flex-col basis-1/2 ">{renderSelectedDegres()}</div>
-          <div className="p-8 flex flex-col justify-center gap-4 basis-1/2">
+      <main className="flex flex-col justify-center gap-1 rounded-lg md:ml-20">
+        <div className="flex  flex-col items-center justify-start">
+          {/* Left Column - Render */}
+          <div className="flex w-[80%] basis-1/2 flex-col items-center justify-center pt-20 ">
+            {renderSelectedDegres()}
+          </div>
+
+          <div className="flex basis-1/2 flex-col justify-center gap-4 p-8">
             <DegresCollapse
               deg1="G"
               deg4="C"

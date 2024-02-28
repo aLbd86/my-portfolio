@@ -8,7 +8,14 @@ import Slide3 from "../public/images/home-slide3.webp";
 // import function to register Swiper custom elements
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectFade,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -22,7 +29,14 @@ export default function SwiperHome() {
     <>
       <Swiper
         className=""
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
+        modules={[
+          Navigation,
+          Pagination,
+          Scrollbar,
+          A11y,
+          EffectFade,
+          Autoplay,
+        ]}
         spaceBetween={0}
         navigation={false}
         effect="fade"
