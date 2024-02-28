@@ -10,7 +10,7 @@ export default function Home() {
         {/* Bloc - info */}
         <div className=" flex flex-col gap-3 md:flex-row">
           {/* Bloc - Title */}
-          <div className="border-neutral // // flex flex-col justify-center gap-4 rounded-lg border-4 px-4 py-6 md:basis-2/3 md:px-4 md:py-0 lg:basis-3/4 lg:px-8 xl:items-start xl:items-end  xl:px-8 2xl:basis-4/5 2xl:px-8  ">
+          <div className="border-neutral // // flex flex-col justify-center gap-4 rounded-lg border-4 px-4 py-6 md:basis-2/3 md:px-4 md:py-0 lg:basis-3/4 lg:px-8  xl:items-end  xl:px-8 2xl:basis-4/5 2xl:px-8  ">
             {/* SubTitle */}
             <h4 className="flex text-lg">Artiste multi-disciplinaire</h4>
 
