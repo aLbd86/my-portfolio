@@ -26,14 +26,19 @@ export default function Home() {
               </p>
             </div>
           </div>
+
           {/* Bloc - slider */}
           <div className="// flex w-[100%] items-center justify-center rounded-lg md:w-0 md:basis-1/3 lg:basis-1/4 2xl:basis-1/5 ">
             <SwiperHome></SwiperHome>
           </div>
         </div>
+
+        {/* Menu en Highlight */}
         <div className="py-6 md:py-10">
           <HomePara />
         </div>
+
+        {/*  La suite ...... */}
         <div className="hidden">
           <h2>Espace musique</h2>
           <p>

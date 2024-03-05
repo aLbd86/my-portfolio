@@ -15,9 +15,9 @@ export const Title = () => {
     return () => clearInterval(interval); // Nettoie l'intervalle quand le composant est démonté
   }, []);
 
-  const handleAnimationEnd = () => {
-    // Tu peux ajouter une logique ici si tu veux faire quelque chose à la fin de l'animation
-  };
+  // const handleAnimationEnd = () => {
+  //   // Tu peux ajouter une logique ici si tu veux faire quelque chose à la fin de l'animation
+  // };
 
   return (
     <>
