@@ -1,5 +1,5 @@
 "use client";
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import DegresEmpty from "@/components/DegresEmpty";
 import DegresCollapse from "@/components/DegresCollapse";
 import ForG from "@/components/ForG";
@@ -14,6 +14,7 @@ const DegresGame = () => {
   const [selectedDegresGroup, setSelectedDegresGroup] = useState<number | null>(
     null,
   );
+  //
 
   // La fonction handleDegresClick accepte un nombre comme argument
   const handleDegresClick = (degre: number) => {
