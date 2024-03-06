@@ -26,20 +26,18 @@ export const Title = () => {
           // style={{ animationPlayState: "paused" }}
           ref={firstTitleRef}
           // onAnimationEnd={handleAnimationEnd}
-          className={`animate-typing border-r-#F1861D // // text-neutral block overflow-hidden whitespace-nowrap border-r-4  pr-4 text-3xl font-black md:text-4xl lg:text-5xl xl:pr-10 xl:text-7xl 2xl:text-8xl ${
+          className={`animate-typing border-r-#F1861D // // text-neutral block overflow-hidden whitespace-nowrap border-r-4  pr-4 text-3xl font-black md:text-4xl lg:text-5xl lg:pr-8 xl:pr-10 xl:text-7xl 2xl:text-8xl ${
             showFirstTitle ? "block" : "hidden"
-          }`}
-        >
+          }`}>
           Alexandre Laborde
         </h1>
         <h1
           // style={{ animationPlayState: "paused" }}
           ref={secondTitleRef}
           // onAnimationEnd={handleAnimationEnd}
-          className={`animate-typing border-r-#F1861D // // text-neutral block overflow-hidden whitespace-nowrap border-r-4  pr-4 text-3xl font-black md:text-4xl lg:text-5xl xl:pr-10 xl:text-7xl 2xl:text-8xl ${
+          className={`animate-typing border-r-#F1861D // // text-neutral block overflow-hidden whitespace-nowrap border-r-4  pr-4 text-3xl font-black md:text-4xl lg:text-5xl lg:pr-8 xl:pr-10 xl:text-7xl 2xl:text-8xl ${
             !showFirstTitle ? "block" : "hidden"
-          }`}
-        >
+          }`}>
           Mon portfolio
         </h1>
       </div>
