@@ -14,6 +14,15 @@ const config: Config = {
           "linear-gradient(90deg, #F1F1F1 0%, rgba(234, 234, 234, 0) 11.5%, rgba(217, 217, 217, 0) 50%, rgba(232, 232, 232, 0) 88.5%, #F1F1F1 100%)",
       },
       keyframes: {
+        typingP: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden",
+          },
+          "100%": {
+            width: "100%",
+          },
+        },
         typing: {
           "0%": {
             width: "0%",
@@ -42,6 +51,7 @@ const config: Config = {
       },
       animation: {
         typing: "typing 2.6s steps(22) infinite alternate, blink .5s infinite",
+        typingP: "typing 4s steps(40) , blink .5s infinite",
         slideToLeft: "slideToLeft 10s linear infinite",
         slideToRight: "slideToRight 12s linear infinite",
       },
